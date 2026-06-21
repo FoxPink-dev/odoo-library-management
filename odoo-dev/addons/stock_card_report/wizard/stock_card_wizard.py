@@ -45,7 +45,7 @@ class StockCardWizard(models.TransientModel):
             'type': 'ir.actions.act_window',
             'name': 'Stock Card Report',
             'res_model': 'stock.card.report.line',
-            'view_mode': 'tree,graph,pivot',
+            'view_mode': 'list,graph,pivot',
             'domain': [('wizard_id', '=', self.id)],
             'target': 'main',
             'context': {
