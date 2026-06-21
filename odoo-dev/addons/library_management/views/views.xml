@@ -1,0 +1,73 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="library_book_tree_view">
+      <field name="name">library.book.tree</field>
+      <field name="model">library.book</field>
+      <field name="arch" type="xml">
+        <list string="Books">
+          <field name="name"/>
+          <field name="author"/>
+          <field name="isbn"/>
+          <field name="state"/>
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="library_book_form_view">
+      <field name="name">library.book.form</field>
+      <field name="model">library.book</field>
+      <field name="arch" type="xml">
+        <form string="Book">
+          <header>
+            <field name="state" widget="statusbar"/>
+          </header>
+          <sheet>
+            <group>
+              <group>
+                <field name="name"/>
+                <field name="author"/>
+                <field name="isbn"/>
+                <field name="publication_date"/>
+              </group>
+              <group>
+                <field name="active"/>
+              </group>
+            </group>
+            <group>
+              <field name="description"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="library_book_search_view">
+      <field name="name">library.book.search</field>
+      <field name="model">library.book</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="name"/>
+          <field name="author"/>
+          <field name="isbn"/>
+          <filter name="filter_available" string="Available" domain="[('state','=','available')]"/>
+          <filter name="filter_borrowed" string="Borrowed" domain="[('state','=','borrowed')]"/>
+          <separator/>
+          <filter name="filter_active" string="Active" domain="[('active','=',True)]"/>
+        </search>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="library_book_action_window">
+      <field name="name">Books</field>
+      <field name="res_model">library.book</field>
+      <field name="view_mode">tree,form</field>
+      <field name="search_view_id" ref="library_book_search_view"/>
+    </record>
+
+    <menuitem name="Library" id="library_menu_root" sequence="100"/>
+    <menuitem name="Books" id="library_book_menu" parent="library_menu_root"
+              action="library_book_action_window" sequence="10"/>
+
+  </data>
+</odoo>
