@@ -151,7 +151,7 @@ class StockCardReportLine(models.TransientModel):
     wizard_id = fields.Many2one('stock.card.wizard', string='Wizard', required=True, ondelete='cascade')
     product_id = fields.Many2one('product.product', string='Product', required=True)
     location_id = fields.Many2one('stock.location', string='Location')
-    date = fields.Datetime(string='Date')
+    date = fields.Date(string='Date')
     reference = fields.Char(string='Reference')
     description = fields.Char(string='Description')
     incoming_qty = fields.Float(string='Incoming Qty', digits='Product Unit of Measure')
