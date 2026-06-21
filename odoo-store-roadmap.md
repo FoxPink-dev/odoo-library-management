@@ -242,6 +242,25 @@ Phase 4 → Suite: "AI Reporting Suite" bundle €299
 - Phải dùng `stock.group_stock_user` cho security
 - Menu gắn dưới `stock.menu_warehouse_report`
 
+**Logo prompt (dùng AI image generator — đã có sẵn, ko hỏi lại):**
+```
+Create a 512x512 app icon for "Enhanced Stock Card Report", an Odoo inventory reporting module.
+Style: clean flat modern design, white background, blue (#2980b9) and green (#2ecc71) accents.
+Main text: None — icon-only design.
+Visual: 3 ascending bar chart bars (blue/teal gradients), rounded corners, upward arrow (green) on right. Simple inventory box outline beneath bars. Minimal shadow on white rounded square.
+Requirements: No text, no brand logos, Odoo Store 512x512, bold readable at small sizes.
+```
+
+**Banner prompt (dùng AI image generator — đã có sẵn, ko hỏi lại):**
+```
+Create a 16:9 English blog cover image for "Enhanced Stock Card Report" for Odoo.
+Style: clean modern premium tech/business, light cream/white bg, blue (#2980b9) and teal (#1abc9c) accents.
+Main text: "Enhanced Stock Card Report" / "Multi-Warehouse Inventory Reporting"
+Subtext: "Running Balance • Valuation • PDF Export • Charts • Odoo CE 19.0"
+Visual: Inventory dashboard mockup with bar chart + data table. Floating feature cards: Date Range, Multi-Warehouse, Running Balance, PDF Export. Upward trending chart with green arrow. Data flow: "Stock Moves" → "Report" → "PDF/Chart".
+Requirements: Clear English typography, not too much text, no brand logos, for Odoo Store listing cover.
+```
+
 #### Phase 1: Free Module — Enhanced Stock Card Report
 **Code** ✅ (22/06):
 - Wizard: date range, multi-product, multi-warehouse, category filter
