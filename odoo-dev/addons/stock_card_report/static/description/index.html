@@ -1,50 +1,197 @@
-<section class="container">
-  <div class="text-center mb-4">
-    <h1>Enhanced Stock Card Report</h1>
-    <p class="lead">Multi-warehouse stock movement report with running balance, valuation, and export.</p>
-    <p><strong>For Odoo Community Edition 18.0 &amp; 19.0</strong></p>
-  </div>
+<section style="max-width:900px;margin:0 auto;padding:0 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,sans-serif;">
 
-  <div class="alert alert-info">
-    <strong>100% Free &amp; Open Source</strong> — AGPL-3 licensed. No dependencies on Odoo Enterprise or paid modules.
-  </div>
-
-  <h2>Features</h2>
-  <ul>
-    <li>Filter by date range, product, category, warehouse, or location</li>
-    <li>Running balance with unit cost valuation (incoming/outgoing value)</li>
-    <li>Interactive bar chart (incoming vs outgoing over time)</li>
-    <li>Pivot table by product/month</li>
-    <li>Printable PDF report per product</li>
-    <li>Export to Excel via standard Odoo export</li>
-    <li>Opening balance before date range included</li>
-  </ul>
-
-  <h2>Screenshots</h2>
-  <div class="row">
-    <div class="col-md-12 mb-3">
-      <img src="images/main_screenshot.png" class="img-fluid img-thumbnail" alt="Stock Card Report Overview"/>
+<!-- HERO -->
+<div style="display:flex;flex-wrap:wrap;gap:40px;align-items:center;padding:48px 0 40px;">
+    <div style="flex:1;min-width:300px;">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:100px;padding:4px 14px 4px 6px;margin-bottom:20px;">
+            <span style="background:#0f172a;color:#fff;border-radius:100px;padding:2px 10px;font-size:11px;font-weight:700;">v19.0</span>
+            <span style="font-size:12px;color:#64748b;">Odoo 19.0</span>
+        </div>
+        <h1 style="font-size:40px;font-weight:800;color:#0f172a;margin:0 0 16px;line-height:1.15;letter-spacing:-0.5px;">Enhanced Stock Card Report</h1>
+        <p style="font-size:17px;color:#475569;margin:0 0 8px;line-height:1.7;">Multi-warehouse stock movement report with running balance, valuation, and PDF export.</p>
+        <p style="font-size:14px;color:#94a3b8;margin:0 0 28px;line-height:1.6;">No Enterprise required. No paid modules needed. Works out of the box with Odoo CE.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <span style="display:inline-flex;align-items:center;gap:8px;background:#0f172a;color:#fff;padding:12px 28px;border-radius:8px;font-size:15px;font-weight:600;">Free &amp; Open Source</span>
+            <span style="font-size:13px;color:#94a3b8;padding:12px 0;">AGPL-3 Licensed</span>
+        </div>
     </div>
-  </div>
+    <div style="flex:1;min-width:300px;">
+        <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:8px;">
+            <img src="images/main_screenshot.png" alt="Enhanced Stock Card Report" style="width:100%;border-radius:8px;display:block;">
+        </div>
+    </div>
+</div>
 
-  <h2>Usage</h2>
-  <ol>
-    <li>Go to <strong>Inventory &gt; Reporting &gt; Stock Card Report</strong></li>
-    <li>Select date range, products/warehouses (optional)</li>
-    <li>Click <strong>Generate</strong> to view the report</li>
-    <li>Use <strong>Print PDF</strong> for a per-product printable report</li>
-    <li>Switch between <strong>List, Graph, Pivot</strong> views for different analysis</li>
-  </ol>
+<!-- STATS -->
+<div style="background:#0f172a;border-radius:12px;padding:32px 24px;margin:24px 0;display:flex;flex-wrap:wrap;text-align:center;">
+    <div style="flex:1;min-width:120px;padding:8px 0;">
+        <div style="font-size:36px;font-weight:800;color:#fff;margin:0 0 4px;">Multi</div>
+        <div style="font-size:13px;color:#94a3b8;">Warehouse Filter</div>
+    </div>
+    <div style="flex:1;min-width:120px;padding:8px 0;">
+        <div style="font-size:36px;font-weight:800;color:#fff;margin:0 0 4px;">Real-time</div>
+        <div style="font-size:13px;color:#94a3b8;">Running Balance</div>
+    </div>
+    <div style="flex:1;min-width:120px;padding:8px 0;">
+        <div style="font-size:36px;font-weight:800;color:#fff;margin:0 0 4px;">PDF</div>
+        <div style="font-size:13px;color:#94a3b8;">Export</div>
+    </div>
+    <div style="flex:1;min-width:120px;padding:8px 0;">
+        <div style="font-size:36px;font-weight:800;color:#fff;margin:0 0 4px;">Chart</div>
+        <div style="font-size:13px;color:#94a3b8;">+ Pivot Views</div>
+    </div>
+</div>
 
-  <h2>Requirements</h2>
-  <ul>
-    <li>Odoo Community Edition 18.0 or 19.0</li>
-    <li>stock, product modules (included in CE)</li>
-  </ul>
+<!-- WHY -->
+<div style="padding:48px 0;">
+    <div style="text-align:center;margin-bottom:40px;">
+        <p style="font-size:13px;font-weight:600;color:#64748b;letter-spacing:1px;text-transform:uppercase;margin:0 0 8px;">Why This Module</p>
+        <h2 style="font-size:28px;font-weight:700;color:#0f172a;margin:0;">Inventory Visibility Without Enterprise</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:24px 20px;text-align:center;">
+            <div style="width:44px;height:44px;border-radius:10px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:18px;color:#64748b;"><i class="fa fa-filter"></i></div>
+            <h4 style="font-size:15px;font-weight:600;color:#0f172a;margin:0 0 8px;">Smart Filtering</h4>
+            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;">Filter by date range, product, category, warehouse, or specific location. See exactly what you need.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:24px 20px;text-align:center;">
+            <div style="width:44px;height:44px;border-radius:10px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:18px;color:#64748b;"><i class="fa fa-calculator"></i></div>
+            <h4 style="font-size:15px;font-weight:600;color:#0f172a;margin:0 0 8px;">Valuation Included</h4>
+            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;">Running balance with unit cost valuation. Incoming/outgoing value calculated automatically from stock moves.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:24px 20px;text-align:center;">
+            <div style="width:44px;height:44px;border-radius:10px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:18px;color:#64748b;"><i class="fa fa-file-pdf-o"></i></div>
+            <h4 style="font-size:15px;font-weight:600;color:#0f172a;margin:0 0 8px;">PDF &amp; Excel Export</h4>
+            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;">Generate per-product PDF reports with totals. Export to Excel via standard Odoo export for further analysis.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:24px 20px;text-align:center;">
+            <div style="width:44px;height:44px;border-radius:10px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:18px;color:#64748b;"><i class="fa fa-bar-chart"></i></div>
+            <h4 style="font-size:15px;font-weight:600;color:#0f172a;margin:0 0 8px;">Interactive Charts</h4>
+            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;">Bar chart view shows incoming vs outgoing over time. Pivot view groups by product and month.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:24px 20px;text-align:center;">
+            <div style="width:44px;height:44px;border-radius:10px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:18px;color:#64748b;"><i class="fa fa-cubes"></i></div>
+            <h4 style="font-size:15px;font-weight:600;color:#0f172a;margin:0 0 8px;">Opening Balance</h4>
+            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;">Opening balance before your date range is auto-calculated. See the full history context for every product.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:24px 20px;text-align:center;">
+            <div style="width:44px;height:44px;border-radius:10px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:18px;color:#64748b;"><i class="fa fa-plug"></i></div>
+            <h4 style="font-size:15px;font-weight:600;color:#0f172a;margin:0 0 8px;">Zero Dependencies</h4>
+            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;">Only depends on stock and product (both in CE). No Studio, no IAP, no external APIs. Install and run.</p>
+        </div>
+    </div>
+</div>
 
-  <h2>Support</h2>
-  <p>
-    For bug reports and feature requests, please use the
-    <a href="https://github.com/FoxPink-dev/odoo-library-management/issues">GitHub Issues</a> page.
-  </p>
+<!-- HOW IT WORKS -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:48px 32px;margin:24px 0;">
+    <div style="text-align:center;margin-bottom:36px;">
+        <p style="font-size:13px;font-weight:600;color:#64748b;letter-spacing:1px;text-transform:uppercase;margin:0 0 8px;">Usage</p>
+        <h2 style="font-size:28px;font-weight:700;color:#0f172a;margin:0;">Three Steps to Your Report</h2>
+    </div>
+    <div style="display:flex;align-items:flex-start;justify-content:center;gap:0;">
+        <div style="flex:1;text-align:center;position:relative;padding:0 12px;">
+            <div style="width:56px;height:56px;border-radius:50%;background:#0f172a;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:20px;font-weight:700;color:#fff;position:relative;z-index:1;">1</div>
+            <div style="position:absolute;top:28px;left:calc(50% + 28px);right:calc(-50% + 28px);height:2px;background:#e2e8f0;z-index:0;"></div>
+            <h4 style="font-size:16px;font-weight:600;color:#0f172a;margin:0 0 8px;">Set Filters</h4>
+            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;max-width:260px;margin-left:auto;margin-right:auto;">Choose date range, products, warehouses. All filters optional except dates.</p>
+        </div>
+        <div style="flex:1;text-align:center;position:relative;padding:0 12px;">
+            <div style="width:56px;height:56px;border-radius:50%;background:#0f172a;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:20px;font-weight:700;color:#fff;position:relative;z-index:1;">2</div>
+            <div style="position:absolute;top:28px;left:calc(50% + 28px);right:calc(-50% + 28px);height:2px;background:#e2e8f0;z-index:0;"></div>
+            <h4 style="font-size:16px;font-weight:600;color:#0f172a;margin:0 0 8px;">Generate Report</h4>
+            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;max-width:260px;margin-left:auto;margin-right:auto;">Click Generate. View results as list, graph, or pivot. Running balance computed automatically.</p>
+        </div>
+        <div style="flex:1;text-align:center;position:relative;padding:0 12px;">
+            <div style="width:56px;height:56px;border-radius:50%;background:#0f172a;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:20px;font-weight:700;color:#fff;position:relative;z-index:1;">3</div>
+            <h4 style="font-size:16px;font-weight:600;color:#0f172a;margin:0 0 8px;">Export or Print</h4>
+            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;max-width:260px;margin-left:auto;margin-right:auto;">Print PDF per product or export to Excel. Share with your team.</p>
+        </div>
+    </div>
+</div>
+
+<!-- TECH SPECS -->
+<div style="padding:48px 0;">
+    <div style="text-align:center;margin-bottom:32px;">
+        <p style="font-size:13px;font-weight:600;color:#64748b;letter-spacing:1px;text-transform:uppercase;margin:0 0 8px;">Technical</p>
+        <h2 style="font-size:28px;font-weight:700;color:#0f172a;margin:0;">Specifications</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;">
+            <span style="font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.3px;text-transform:uppercase;">Version</span>
+            <span style="font-size:14px;color:#0f172a;font-weight:500;">Odoo 19.0</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;">
+            <span style="font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.3px;text-transform:uppercase;">License</span>
+            <span style="font-size:14px;color:#0f172a;font-weight:500;">AGPL-3</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;">
+            <span style="font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.3px;text-transform:uppercase;">Dependencies</span>
+            <span style="font-size:14px;color:#0f172a;font-weight:500;"><code style="background:#e2e8f0;padding:2px 8px;border-radius:4px;font-size:12px;color:#475569;">stock</code>, <code style="background:#e2e8f0;padding:2px 8px;border-radius:4px;font-size:12px;color:#475569;">product</code></span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;">
+            <span style="font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.3px;text-transform:uppercase;">Module Type</span>
+            <span style="font-size:14px;color:#0f172a;font-weight:500;">Free Module</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;">
+            <span style="font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.3px;text-transform:uppercase;">Language</span>
+            <span style="font-size:14px;color:#0f172a;font-weight:500;">English</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;">
+            <span style="font-size:11px;font-weight:600;color:#64748b;letter-spacing:0.3px;text-transform:uppercase;">Author</span>
+            <span style="font-size:14px;color:#0f172a;font-weight:500;">FoxPink</span>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:48px 32px;margin:24px 0;">
+    <div style="text-align:center;margin-bottom:32px;">
+        <p style="font-size:13px;font-weight:600;color:#64748b;letter-spacing:1px;text-transform:uppercase;margin:0 0 8px;">FAQ</p>
+        <h2 style="font-size:28px;font-weight:700;color:#0f172a;margin:0;">Frequently Asked Questions</h2>
+    </div>
+    <details style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;margin-bottom:8px;overflow:hidden;">
+        <summary style="padding:16px 22px;font-size:15px;font-weight:600;color:#0f172a;cursor:pointer;">Does it work with Odoo Community Edition?</summary>
+        <div style="padding:0 22px 16px;font-size:14px;color:#64748b;line-height:1.7;">Yes. Depends only on stock and product, both included in CE. No Enterprise features required.</div>
+    </details>
+    <details style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;margin-bottom:8px;overflow:hidden;">
+        <summary style="padding:16px 22px;font-size:15px;font-weight:600;color:#0f172a;cursor:pointer;">Does it support multiple warehouses?</summary>
+        <div style="padding:0 22px 16px;font-size:14px;color:#64748b;line-height:1.7;">Yes. Select one or multiple warehouses/locations. The report will aggregate or separate as needed.</div>
+    </details>
+    <details style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;margin-bottom:8px;overflow:hidden;">
+        <summary style="padding:16px 22px;font-size:15px;font-weight:600;color:#0f172a;cursor:pointer;">Is the valuation FIFO or average?</summary>
+        <div style="padding:0 22px 16px;font-size:14px;color:#64748b;line-height:1.7;">Uses the unit cost from each stock move (price_unit) and falls back to the product&rsquo;s standard_price. Works with any costing method.</div>
+    </details>
+    <details style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+        <summary style="padding:16px 22px;font-size:15px;font-weight:600;color:#0f172a;cursor:pointer;">Can I use this in Odoo Online / Odoo.sh?</summary>
+        <div style="padding:0 22px 16px;font-size:14px;color:#64748b;line-height:1.7;">Yes. Odoo.sh supports custom modules. For Odoo Online (SaaS), third-party Python modules may have limited support.</div>
+    </details>
+</div>
+
+<!-- FOOTER -->
+<div style="background:linear-gradient(180deg,#0f172a 0%,#0b1120 100%);border-radius:16px;padding:48px 32px 24px;margin:48px 0 0;border:1px solid #1e293b;">
+    <div style="text-align:center;margin-bottom:36px;">
+        <h2 style="font-size:24px;font-weight:700;color:#f8fafc;margin:0 0 8px;">Get in Touch</h2>
+        <p style="font-size:14px;color:#64748b;margin:0;">Report bugs or request features on GitHub.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-bottom:36px;">
+        <div style="flex:1;min-width:170px;max-width:210px;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:28px 20px 20px;text-align:center;">
+            <div style="width:48px;height:48px;border-radius:12px;background:rgba(110,84,148,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">
+                <img src="https://cdn.simpleicons.org/github/ffffff" alt="" style="width:24px;height:24px;display:block;">
+            </div>
+            <div style="font-size:15px;font-weight:600;color:#f8fafc;margin-bottom:16px;">GitHub Issues</div>
+            <div style="font-size:13px;color:#94a3b8;word-break:break-all;">github.com/FoxPink-dev/odoo-library-management/issues</div>
+        </div>
+        <div style="flex:1;min-width:170px;max-width:210px;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:28px 20px 20px;text-align:center;">
+            <div style="width:48px;height:48px;border-radius:12px;background:rgba(234,67,53,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">
+                <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="" style="width:24px;height:24px;display:block;">
+            </div>
+            <div style="font-size:15px;font-weight:600;color:#f8fafc;margin-bottom:16px;">Email</div>
+            <div style="font-size:13px;color:#94a3b8;">aduy000@gmail.com</div>
+        </div>
+    </div>
+    <div style="border-top:1px solid #1e293b;padding-top:16px;text-align:center;font-size:12px;color:#475569;">
+        Enhanced Stock Card Report by <strong style="color:#64748b;">FoxPink</strong> &mdash; Odoo 19.0
+    </div>
+</div>
+
 </section>
