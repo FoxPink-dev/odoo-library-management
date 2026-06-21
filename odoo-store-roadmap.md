@@ -111,12 +111,16 @@ Ngày bắt đầu: 22/06/2026   |   Target: €200-800 MRR tại tháng 12/2026
 
 ### Tuần 3-4: Build free module (Ngày 15-28)
 
-**Ngày 15-18: Code module free — Enhanced Stock Card Report**
-- [ ] Product: module free báo cáo Stock Card Valuation nâng cao (hơn module +1.2M% kia)
-- [ ] Features: multi-warehouse, date range filter, export PDF/Excel, beautiful chart
-- [ ] License: AGPL-3 (free)
-- [ ] Test kỹ: cài được trên Odoo clean, không crash
-- [ ] Không hardcode path, không hardcode company info
+**Ngày 15-18: Code module free — Enhanced Stock Card Report** ✅ (22/06/2026)
+- [x] Module `stock_card_report` scaffolded và cài đặt thành công
+- [x] **Wizard**: `stock.card.wizard` — date range, multi-product, multi-warehouse, category filter
+- [x] **Tính năng**: running balance với valuation (incoming/outgoing qty × unit cost)
+- [x] **Views**: tree (multi_edit=0), graph (bar chart incoming/outgoing), pivot
+- [x] **PDF export**: QWeb report template per-product với totals
+- [x] **Menu**: Inventory > Reporting > Stock Card Report
+- [x] **License**: AGPL-3
+- [x] Test: module cài được, wizard tạo được, report lines generate được từ demo data
+- [x] **Commit**: git commit + push lên GitHub
 
 **Ngày 19-20: Tối ưu presentation**
 - [ ] Icon: 512×512px, PNG trong `static/description/icon.png`
