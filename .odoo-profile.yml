@@ -1,0 +1,21 @@
+# Odoo Developer Profile
+# Dùng làm config cho tất cả module
+
+author: FoxPink
+website: https://github.com/FoxPink-dev
+email: aduy000@gmail.com
+github_org: FoxPink-dev
+
+# License defaults
+free_license: AGPL-3       # Free modules
+paid_license: OPL-1        # Paid modules
+currency: EUR              # Default for paid modules
+
+# Odoo version strategy
+odoo_versions:
+  primary: 19.0
+  secondary: []            # Backport later if needed
+
+# Repo naming convention
+repo_prefix: odoo-
+repo_suffix: ""
