@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "method": "call",
+    "jsonrpc": "2.0",
+    "params": {
+      "service": "object",
+      "method": "execute_kw",
+      "args": ["stock_card_dev", 2, "admin", "stock.card.wizard", "create", [{"date_from": "2026-01-01", "date_to": "2026-12-31"}]]
+    }
+  },
+  {
+    "id": 2,
+    "method": "call",
+    "jsonrpc": "2.0",
+    "params": {
+      "service": "object",
+      "method": "execute_kw",
+      "args": ["stock_card_dev", 2, "admin", "stock.move", "search_count", [[["state", "=", "done"]]]]
+    }
+  },
+  {
+    "id": 3,
+    "method": "call",
+    "jsonrpc": "2.0",
+    "params": {
+      "service": "object",
+      "method": "execute_kw",
+      "args": ["stock_card_dev", 2, "admin", "product.product", "search_read", [[], ["id", "display_name", "standard_price"]], {"order": "id"}]
+    }
+  }
+]

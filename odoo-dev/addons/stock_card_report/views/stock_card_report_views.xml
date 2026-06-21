@@ -25,10 +25,8 @@
       <field name="name">stock.card.report.line.graph</field>
       <field name="model">stock.card.report.line</field>
       <field name="arch" type="xml">
-        <graph string="Stock Card Graph" type="bar" stacked="False">
+        <graph string="Stock Card Graph" type="bar">
           <field name="date" interval="day" type="row"/>
-          <field name="incoming_qty" type="measure"/>
-          <field name="outgoing_qty" type="measure"/>
           <field name="balance_qty" type="measure"/>
         </graph>
       </field>

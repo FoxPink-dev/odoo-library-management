@@ -85,27 +85,84 @@
 <!-- HOW IT WORKS -->
 <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:48px 32px;margin:24px 0;">
     <div style="text-align:center;margin-bottom:36px;">
-        <p style="font-size:13px;font-weight:600;color:#64748b;letter-spacing:1px;text-transform:uppercase;margin:0 0 8px;">Usage</p>
-        <h2 style="font-size:28px;font-weight:700;color:#0f172a;margin:0;">Three Steps to Your Report</h2>
+        <p style="font-size:13px;font-weight:600;color:#64748b;letter-spacing:1px;text-transform:uppercase;margin:0 0 8px;">Step-by-Step Guide</p>
+        <h2 style="font-size:28px;font-weight:700;color:#0f172a;margin:0;">Using the Stock Card Report</h2>
     </div>
-    <div style="display:flex;align-items:flex-start;justify-content:center;gap:0;">
-        <div style="flex:1;text-align:center;position:relative;padding:0 12px;">
-            <div style="width:56px;height:56px;border-radius:50%;background:#0f172a;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:20px;font-weight:700;color:#fff;position:relative;z-index:1;">1</div>
-            <div style="position:absolute;top:28px;left:calc(50% + 28px);right:calc(-50% + 28px);height:2px;background:#e2e8f0;z-index:0;"></div>
-            <h4 style="font-size:16px;font-weight:600;color:#0f172a;margin:0 0 8px;">Set Filters</h4>
-            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;max-width:260px;margin-left:auto;margin-right:auto;">Choose date range, products, warehouses. All filters optional except dates.</p>
+
+    <!-- Step 1: Menu -->
+    <div style="margin-bottom:36px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#0f172a;color:#fff;font-weight:700;font-size:18px;flex-shrink:0;">1</span>
+            <h3 style="font-size:20px;font-weight:700;color:#0f172a;margin:0;">Navigate to the Report</h3>
         </div>
-        <div style="flex:1;text-align:center;position:relative;padding:0 12px;">
-            <div style="width:56px;height:56px;border-radius:50%;background:#0f172a;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:20px;font-weight:700;color:#fff;position:relative;z-index:1;">2</div>
-            <div style="position:absolute;top:28px;left:calc(50% + 28px);right:calc(-50% + 28px);height:2px;background:#e2e8f0;z-index:0;"></div>
-            <h4 style="font-size:16px;font-weight:600;color:#0f172a;margin:0 0 8px;">Generate Report</h4>
-            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;max-width:260px;margin-left:auto;margin-right:auto;">Click Generate. View results as list, graph, or pivot. Running balance computed automatically.</p>
+        <p style="font-size:14px;color:#64748b;margin:0 0 12px;line-height:1.7;">Go to <strong>Inventory &#8594; Reporting &#8594; Stock Card Report</strong>. The menu is located under the Reporting section of the Inventory app.</p>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+            <img src="images/05_menu_location.png" alt="Menu location" style="width:100%;display:block;">
         </div>
-        <div style="flex:1;text-align:center;position:relative;padding:0 12px;">
-            <div style="width:56px;height:56px;border-radius:50%;background:#0f172a;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:20px;font-weight:700;color:#fff;position:relative;z-index:1;">3</div>
-            <h4 style="font-size:16px;font-weight:600;color:#0f172a;margin:0 0 8px;">Export or Print</h4>
-            <p style="font-size:14px;color:#64748b;margin:0;line-height:1.6;max-width:260px;margin-left:auto;margin-right:auto;">Print PDF per product or export to Excel. Share with your team.</p>
+    </div>
+
+    <!-- Step 2: Wizard Form -->
+    <div style="margin-bottom:36px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#0f172a;color:#fff;font-weight:700;font-size:18px;flex-shrink:0;">2</span>
+            <h3 style="font-size:20px;font-weight:700;color:#0f172a;margin:0;">Set Filters</h3>
         </div>
+        <p style="font-size:14px;color:#64748b;margin:0 0 12px;line-height:1.7;">Fill in the required <strong>date range</strong> and optional filters:</p>
+        <ul style="font-size:14px;color:#64748b;line-height:2;margin:0 0 16px 20px;padding:0;">
+            <li><strong>① From Date / To Date</strong> (required) &mdash; the reporting period</li>
+            <li><strong>③ Products</strong> (optional) &mdash; select specific products</li>
+            <li><strong>④ Category</strong> (optional) &mdash; filter by product category</li>
+            <li><strong>⑤ Warehouses / Locations</strong> (optional) &mdash; limit to specific warehouses</li>
+        </ul>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+            <img src="images/01_wizard_form.png" alt="Wizard form" style="width:100%;display:block;">
+        </div>
+    </div>
+
+    <!-- Step 3: Generate & List -->
+    <div style="margin-bottom:36px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#0f172a;color:#fff;font-weight:700;font-size:18px;flex-shrink:0;">3</span>
+            <h3 style="font-size:20px;font-weight:700;color:#0f172a;margin:0;">Generate &amp; Review List View</h3>
+        </div>
+        <p style="font-size:14px;color:#64748b;margin:0 0 12px;line-height:1.7;">Click <strong>Generate</strong> to run the report. The list view shows each stock movement with running balance and valuation:</p>
+        <ul style="font-size:14px;color:#64748b;line-height:2;margin:0 0 16px 20px;padding:0;">
+            <li><strong>① Product</strong> &mdash; product name and code</li>
+            <li><strong>② Incoming / Outgoing Qty</strong> &mdash; quantity moved</li>
+            <li><strong>③ Balance Qty</strong> &mdash; running cumulative balance</li>
+            <li><strong>④ Unit Cost</strong> &mdash; cost per unit from stock move</li>
+            <li><strong>⑤ Valuation</strong> &mdash; incoming, outgoing, and balance value</li>
+        </ul>
+        <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+            <img src="images/02_list_view.png" alt="List view" style="width:100%;display:block;">
+        </div>
+    </div>
+
+    <!-- Step 4: Graph & Pivot -->
+    <div style="margin-bottom:36px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#0f172a;color:#fff;font-weight:700;font-size:18px;flex-shrink:0;">4</span>
+            <h3 style="font-size:20px;font-weight:700;color:#0f172a;margin:0;">Switch Views: Graph &amp; Pivot</h3>
+        </div>
+        <p style="font-size:14px;color:#64748b;margin:0 0 12px;line-height:1.7;">Toggle between <strong>List</strong>, <strong>Graph</strong>, and <strong>Pivot</strong> views to analyze data visually.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+                <img src="images/03_graph_view.png" alt="Graph view" style="width:100%;display:block;">
+            </div>
+            <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+                <img src="images/04_pivot_view.png" alt="Pivot view" style="width:100%;display:block;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 5: Print PDF -->
+    <div style="margin-bottom:0;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#0f172a;color:#fff;font-weight:700;font-size:18px;flex-shrink:0;">5</span>
+            <h3 style="font-size:20px;font-weight:700;color:#0f172a;margin:0;">Export to PDF</h3>
+        </div>
+        <p style="font-size:14px;color:#64748b;margin:0 0 12px;line-height:1.7;">From the wizard, click <strong>Print PDF</strong> to generate a per-product PDF report with full details, opening balance, and totals.</p>
+        <p style="font-size:14px;color:#94a3b8;margin:0;line-height:1.7;">You can also export any view to <strong>Excel</strong> using Odoo's standard export (Favorites &#8594; Export All).</p>
     </div>
 </div>
 
