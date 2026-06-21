@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="stock_card_report_line_tree_view">
+      <field name="name">stock.card.report.line.tree</field>
+      <field name="model">stock.card.report.line</field>
+      <field name="arch" type="xml">
+        <list string="Stock Card Report Lines" multi_edit="0">
+          <field name="product_id"/>
+          <field name="date"/>
+          <field name="reference"/>
+          <field name="description"/>
+          <field name="incoming_qty" sum="Total In"/>
+          <field name="outgoing_qty" sum="Total Out"/>
+          <field name="balance_qty"/>
+          <field name="unit_cost"/>
+          <field name="incoming_value" sum="Total In Value"/>
+          <field name="outgoing_value" sum="Total Out Value"/>
+          <field name="balance_value"/>
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="stock_card_report_line_graph_view">
+      <field name="name">stock.card.report.line.graph</field>
+      <field name="model">stock.card.report.line</field>
+      <field name="arch" type="xml">
+        <graph string="Stock Card Graph" type="bar" stacked="False">
+          <field name="date" interval="day"/>
+          <field name="incoming_qty" type="measure"/>
+          <field name="outgoing_qty" type="measure"/>
+        </graph>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="stock_card_report_line_pivot_view">
+      <field name="name">stock.card.report.line.pivot</field>
+      <field name="model">stock.card.report.line</field>
+      <field name="arch" type="xml">
+        <pivot string="Stock Card Pivot">
+          <field name="product_id" type="row"/>
+          <field name="date" interval="month" type="col"/>
+          <field name="incoming_qty" type="measure"/>
+          <field name="outgoing_qty" type="measure"/>
+          <field name="balance_qty" type="measure"/>
+          <field name="balance_value" type="measure"/>
+        </pivot>
+      </field>
+    </record>
+
+  </data>
+</odoo>

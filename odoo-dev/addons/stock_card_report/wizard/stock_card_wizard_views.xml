@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="stock_card_wizard_form_view">
+      <field name="name">stock.card.wizard.form</field>
+      <field name="model">stock.card.wizard</field>
+      <field name="arch" type="xml">
+        <form string="Stock Card Report">
+          <group>
+            <group>
+              <field name="date_from" required="1"/>
+              <field name="date_to" required="1"/>
+            </group>
+            <group>
+              <field name="product_ids" widget="many2many_tags"/>
+              <field name="category_id"/>
+              <field name="warehouse_ids" widget="many2many_tags"/>
+              <field name="location_ids" widget="many2many_tags"/>
+            </group>
+          </group>
+          <footer>
+            <button name="action_generate_report" string="Generate" type="object" class="btn-primary"/>
+            <button name="action_print_pdf" string="Print PDF" type="object" class="btn-secondary"/>
+            <button string="Cancel" class="btn-default" special="cancel"/>
+          </footer>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_stock_card_wizard">
+      <field name="name">Stock Card Report</field>
+      <field name="res_model">stock.card.wizard</field>
+      <field name="view_mode">form</field>
+      <field name="target">new</field>
+      <field name="help" type="html">
+        <p>Generate an enhanced stock card report with:</p>
+        <ul>
+          <li>Date range filtering</li>
+          <li>Multi-product selection</li>
+          <li>Multi-warehouse / location filtering</li>
+          <li>Running balance with valuation</li>
+          <li>PDF and Excel export</li>
+        </ul>
+      </field>
+    </record>
+
+    <menuitem name="Stock Card Report" id="menu_stock_card_report"
+              parent="stock.menu_warehouse_report"
+              action="action_stock_card_wizard" sequence="50"/>
+
+  </data>
+</odoo>

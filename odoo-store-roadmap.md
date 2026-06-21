@@ -62,11 +62,11 @@ Ngày bắt đầu: 22/06/2026   |   Target: €200-800 MRR tại tháng 12/2026
 - [x] LinkedIn/Guides — "AI for Odoo Community Edition" guide xác nhận no AI for CE
 - [x] **Quyết định: GO.** Niche = AI Inventory Report Generator cho Community Edition
 
-**Checkpoint Phase 0a:**
+**Checkpoint Phase 0a:** ✅
 ```
-[ ] Có niche cụ thể (ví dụ: "Odoo rental module cho thiết bị xây dựng")
-[ ] Biết rõ ít nhất 3 đối thủ cạnh tranh trong niche
-[ ] Biết rõ feature gap của họ (ít nhất 3 điểm yếu)
+[x] Niche: AI Inventory Report Generator cho Community Edition
+[x] Biết 11 đối thủ (AI Copilot €199, AI Dynamic Report Gen free buggy, Natural Query 309 LoC...)
+[x] Feature gap: no module = NL query + Inventory focus + CE tối ưu + Scheduled + Multi-export
 ```
 
 ### Tuần 2: Học & thiết lập môi trường (Ngày 8-14)
@@ -79,22 +79,23 @@ Ngày bắt đầu: 22/06/2026   |   Target: €200-800 MRR tại tháng 12/2026
 - [x] Module install + upgrade qua CLI thành công
 - [ ] VS Code: user tự cài sau
 
-**Ngày 11-12: Odoo dev cơ bản**
-- [ ] Tự build module "Library Management" đơn giản (model, view, menu, security)
-- [ ] Push lên GitHub public
-- [ ] Viết README.md cho module
+**Ngày 11-12: Odoo dev cơ bản** ✅ (22/06/2026)
+- [x] Build `library_management` module: `library.book` model (name, author, isbn, state, active) + tree/form/search views + menu + security
+- [x] Module installed + demo data loaded + verified via JSON-RPC API
+- [x] Push lên GitHub public: https://github.com/FoxPink-dev/odoo-library-management
+- [ ] README.md: create later
 
-**Ngày 13-14: Kiểm tra kỹ thuật**
-- [ ] Đọc Odoo Vendor Guidelines (apps.odoo.com/apps/vendor-guidelines)
-- [ ] Đọc Submit your Apps FAQ (apps.odoo.com/apps/faq)
-- [ ] Tạo Odoo account + truy cập được App Dashboard
+**Ngày 13-14: Kiểm tra kỹ thuật** ✅ (22/06/2026)
+- [x] Đọc Vendor Guidelines — nắm rõ: manifest rules, license comp, price parity, store score 5 criteria
+- [x] Đọc FAQ — nắm rõ: commission 30%/25%, IAP, private repo cần grant online-odoo user
+- [x] Odoo account đã có sẵn, vào được App Dashboard
 
-**Checkpoint Phase 0b:**
+**Checkpoint Phase 0b:** ✅
 ```
-[ ] Odoo chạy local, scaffold module được
-[ ] GitHub repo public, module cơ bản hoạt động
-[ ] Đã đọc hết vendor guidelines
-[ ] Biết chính xác license nào dùng cho free (AGPL-3) vs paid (OPL-1)
+[x] Odoo chạy local (http://localhost:8069), scaffold module được
+[x] GitHub repo public: FoxPink-dev/odoo-library-management, module hoạt động
+[x] Đã đọc hết vendor guidelines + FAQ
+[x] Free → AGPL-3 / LGPL-3; Paid → OPL-1
 ```
 
 **METRICS THEO DÕI PHASE 0:**

@@ -1,0 +1,67 @@
+<odoo>
+  <data>
+
+    <template id="report_stock_card">
+      <t t-call="web.html_container">
+        <t t-foreach="product_data" t-as="pd">
+          <div class="page">
+            <h2>Stock Card Report</h2>
+            <p>
+              <strong>Product:</strong> <t t-esc="pd.product.display_name"/>
+              <t t-if="pd.product.default_code">
+                | <strong>Code:</strong> <t t-esc="pd.product.default_code"/>
+              </t>
+            </p>
+            <p>
+              <t t-if="docs.date_from">
+                <strong>From:</strong> <t t-esc="docs.date_from"/>
+              </t>
+              <t t-if="docs.date_to">
+                <strong>To:</strong> <t t-esc="docs.date_to"/>
+              </t>
+            </p>
+            <table class="table table-sm table-bordered">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Reference</th>
+                  <th>Incoming</th>
+                  <th>Outgoing</th>
+                  <th>Balance</th>
+                  <th>Unit Cost</th>
+                  <th>In Value</th>
+                  <th>Out Value</th>
+                  <th>Balance Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr t-foreach="pd['lines']" t-as="line">
+                  <td><t t-esc="line.date"/></td>
+                  <td><t t-esc="line.reference"/></td>
+                  <td><t t-esc="line.incoming_qty"/></td>
+                  <td><t t-esc="line.outgoing_qty"/></td>
+                  <td><t t-esc="line.balance_qty"/></td>
+                  <td><t t-esc="line.unit_cost"/></td>
+                  <td><t t-esc="line.incoming_value"/></td>
+                  <td><t t-esc="line.outgoing_value"/></td>
+                  <td><t t-esc="line.balance_value"/></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2"><strong>Totals</strong></td>
+                  <td><strong><t t-esc="pd['total_in']"/></strong></td>
+                  <td><strong><t t-esc="pd['total_out']"/></strong></td>
+                  <td><strong><t t-esc="pd['closing_balance']"/></strong></td>
+                  <td/>
+                  <td colspan="3"/>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </t>
+      </t>
+    </template>
+
+  </data>
+</odoo>
