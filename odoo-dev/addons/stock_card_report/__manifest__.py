@@ -7,7 +7,7 @@
         valuation columns, PDF export, Excel export, chart view.
         Works with Odoo 18.0 and 19.0 Community Edition.
     """,
-    'author': "Vibecode Dev",
+    'author': "FoxPink",
     'website': "https://github.com/FoxPink-dev",
     'category': 'Inventory/Reporting',
     'version': '19.0.1.0.0',
